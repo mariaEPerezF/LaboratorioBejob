@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd%22%3E"/>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <script src="index.js"></script>
+    <title>FormularioLaboratorio</title>
+  </head>
+  <body class="background">
+    <div class="formularioBackground">
+      <div class="title">
+        <h1>Create Account</h1>
+      </div>
+      <div class="container form">
+      <form class="formulario" onsubmit="return validarDatos()">
+          <label for="nombre">Nombre</label><br />
+          <input type="text" id="nombre" name="nombre" required /><br />
+          <span class="error" id="ENombre"></span><br />
+          <label for="correo">Email:</label><br />
+          <input type="email" id="correo" name="correo" required /><br />
+          <span class="error" id="ECorreo"></span><br />
+          <label for="clave">Clave:</label><br />
+          <input type="password" id="clave" name="clave" required /><br />
+          <span class="error" id="EClave"></span><br />
+          <label for="cclave">Confirme su clave:</label><br />
+          <input type="password" id="cclave" name="cclave" required /><br />
+          <span class="error" id="ECClave"></span><br /><br />
+          <input type="submit" class="buttonStyle" value="Enviar"></input >
+          <!-- <div>
+            <button class="buttonStyle" onclick="validarDatos()">Enviar</input>
+          </div>-->
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
